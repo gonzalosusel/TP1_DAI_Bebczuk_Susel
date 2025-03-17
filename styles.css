@@ -1,14 +1,41 @@
 body {
     padding: 25px;
-    background-color: white;
     color: black;
     font-size: 25px;
-  }
-  
-  .dark-mode {
-    background-color: black;
-    color: white;
-  }
+    height: 100vh;
+    background: linear-gradient(rgb(80, 80, 233), rgb(148, 148, 229));
+}
 
+.cambiarTema {
+    background: linear-gradient(rgb(45, 58, 103), rgb(148, 148, 229));
+}
 
-  
+.form{
+    position: absolute;
+    left: 35%;
+    top: 25%; 
+    min-width: 200px;
+    width: 30%;
+    gap: 20px;
+    padding: 1%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+input[type=text]:hover, input[type=password]:hover{
+    background-color: rgb(234, 233, 233);
+}
+
+input[type=text]:focus, input[type=password]:focus{
+    border: 2px solid blue;
+}
+
+.campofalse{
+    border: 2px solid red !important;
+}
+
+.campotrue{
+    border: 2px solid green !important;
+}
